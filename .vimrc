@@ -133,4 +133,4 @@ set nofoldenable
 let g:vim_markdown_math = 1
 
 autocmd BufRead,BufNewFile {*.markdown,*.mdown,*.mkdn,*.md,*.mkd,*.mdwn,*.mdtxt,*.mdtext,*.text} set filetype=markdown
-autocmd FileType markdown setlocal syntax=off spell  
+autocmd FileType markdown setlocal syntax=off
