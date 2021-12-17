@@ -124,7 +124,7 @@ nnoremap <c-s> :w<cr>
 nnoremap <F11> :edit<Space>
 nnoremap <F9> :bd<cr>
 
-nnoremap <F2> :call latex#Ltx()<cr>
+nnoremap <F1> :call latex#Ltx()<cr>
 map L viwS$E
 
 set hlsearch
