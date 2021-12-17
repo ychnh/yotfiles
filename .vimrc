@@ -28,6 +28,7 @@ Plug 'w0rp/ale'
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ychnh/vi_latex_preview'
+Plug 'tpope/vim-surround'
 
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
@@ -124,6 +125,7 @@ nnoremap <F11> :edit<Space>
 nnoremap <F9> :bd<cr>
 
 nnoremap <F2> :call latex#Ltx()<cr>
+map L viwS$E
 
 set hlsearch
 set nofoldenable
