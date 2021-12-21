@@ -125,6 +125,9 @@ nnoremap <F11> :edit<Space>
 nnoremap <F9> :bd<cr>
 
 nnoremap <F1> :call latex#Ltx()<cr>
+" notebook compile hotkey
+nnoremap <F2> :w<cr>:! cd ..;./build<cr>
+
 map L viWS$E
 
 set hlsearch
