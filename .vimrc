@@ -89,8 +89,8 @@ set showcmd
 set backspace=indent,eol,start
 set ruler
 " Color Scheme
-colorscheme gruvbox
-" colorscheme 256_noir
+" colorscheme gruvbox
+colorscheme 256_noir
 set cursorline
 highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=233 guifg=NONE guibg=#121212
 autocmd InsertEnter * highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=234 guifg=NONE guibg=#1c1c1c
