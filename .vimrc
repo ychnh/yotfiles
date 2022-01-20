@@ -50,7 +50,7 @@ Plug 'scrooloose/nerdtree'
 
 
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+"Plug 'plasticboy/vim-markdown'
 call plug#end()
 "
 "Plugin Config -----------------------
