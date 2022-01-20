@@ -139,3 +139,7 @@ let g:vim_markdown_math = 1
 
 autocmd BufRead,BufNewFile {*.markdown,*.mdown,*.mkdn,*.md,*.mkd,*.mdwn,*.mdtxt,*.mdtext,*.text} set filetype=markdown
 autocmd FileType markdown setlocal syntax=off
+
+:hi Folded ctermbg=black
+:hi Folded ctermfg=235
+nnoremap <F3> :setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'^>!*'<cr>zM
