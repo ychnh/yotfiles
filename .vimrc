@@ -142,4 +142,5 @@ autocmd FileType markdown setlocal syntax=off
 
 :hi Folded ctermbg=black
 :hi Folded ctermfg=235
-nnoremap <F3> :setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'^>!*'<cr>zM
+:setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'^>!*'
+set foldminlines=0
