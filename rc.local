@@ -1,0 +1,4 @@
+#!/bin/sh -e
+#make sure to sudo chmod +x the file
+echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode
+exit 0
