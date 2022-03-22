@@ -138,7 +138,12 @@ set nofoldenable
 let g:vim_markdown_math = 1
 
 autocmd BufRead,BufNewFile {*.markdown,*.mdown,*.mkdn,*.md,*.mkd,*.mdwn,*.mdtxt,*.mdtext,*.text} set filetype=markdown
-autocmd FileType markdown setlocal syntax=off
+"autocmd FileType markdown setlocal syntax=off
+autocmd BufNewFile,BufRead *.yhmd setf yhmd 
+highlight yhmdlatex ctermfg=darkgray guifg=#00ffff
+highlight yhmdem ctermfg=DarkRed guifg=#ff0000
+highlight mathkeyword ctermfg=cyan guifg=#00ffff
+
 
 :hi Folded ctermbg=black
 :hi Folded ctermfg=235
