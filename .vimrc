@@ -143,6 +143,7 @@ autocmd BufNewFile,BufRead *.yhmd setf yhmd
 highlight yhmdlatex ctermfg=darkgray guifg=#00ffff
 highlight yhmdem ctermfg=DarkRed guifg=#ff0000
 highlight mathkeyword ctermfg=cyan guifg=#00ffff
+highlight mathkeywordqqq ctermfg=cyan guifg=#00ffff
 
 
 :hi Folded ctermbg=black
