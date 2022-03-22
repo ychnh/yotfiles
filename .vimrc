@@ -147,6 +147,6 @@ highlight mathkeywordqqq ctermfg=cyan guifg=#00ffff
 
 
 :hi Folded ctermbg=black
-:hi Folded ctermfg=235
+:hi Folded ctermfg=239
 :setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'^>!*'
 set foldminlines=0
