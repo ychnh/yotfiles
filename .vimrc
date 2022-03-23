@@ -141,6 +141,7 @@ autocmd BufRead,BufNewFile {*.markdown,*.mdown,*.mkdn,*.md,*.mkd,*.mdwn,*.mdtxt,
 "autocmd FileType markdown setlocal syntax=off
 autocmd BufNewFile,BufRead *.yhmd setf yhmd 
 highlight yhmdlatex ctermfg=darkgray guifg=#00ffff
+highlight yhmdstrike ctermfg=238 guifg=#ff0000
 highlight yhmdem ctermfg=DarkRed guifg=#ff0000
 highlight mathkeyword ctermfg=cyan guifg=#00ffff
 highlight mathkeywordqqq ctermfg=cyan guifg=#00ffff
