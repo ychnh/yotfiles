@@ -128,6 +128,9 @@ nnoremap <F1> :call latex#Ltx()<cr>
 " notebook compile hotkey
 nnoremap <F2> :w<cr>:! cd ..;./build<cr>
 
+nnoremap <m-s> <Esc>a<c-K>P*
+inoremap <m-s> <c-K>P*
+
 map L viWS$E
 
 set hlsearch
