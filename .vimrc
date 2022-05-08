@@ -30,6 +30,9 @@ Plug 'roxma/nvim-yarp'
 Plug 'ychnh/vi_latex_preview'
 Plug 'tpope/vim-surround'
 
+Plug 'tmhedberg/SimpylFold'
+Plug 'Konfekt/FastFold'
+
 autocmd BufEnter * call ncm2#enable_for_buffer()
 
 set completeopt=noinsert,menuone,noselect
@@ -154,3 +157,20 @@ highlight mathkeywordqqq ctermfg=cyan guifg=#00ffff
 :hi Folded ctermfg=239
 :setlocal foldmethod=expr foldexpr=getline(v:lnum)=~'^>!*'
 set foldminlines=0
+
+
+set foldtext=MyFoldText()
+function MyFoldText()
+  let nl = v:foldend - v:foldstart + 1
+  let nucolwidth = &fdc + &number*&numberwidth
+  let winwd = winwidth(0) - nucolwidth - 5
+  let foldlinecount = foldclosedend(v:foldstart) - foldclosed(v:foldstart) + 1
+  let prefix = " _______>>> "
+  let fdnfo = prefix . string(v:foldlevel) . "," . string(foldlinecount)
+  let line =  strpart(getline(v:foldstart), 0 , winwd - len(fdnfo))
+  let fillcharcount = winwd - len(line) - len(fdnfo)
+  "return line . " " . nl . repeat(" ",fillcharcount) . fdnfo
+  return line . " " . nl . repeat(" ",fillcharcount)
+endfunction
+set foldtext=MyFoldText()
+
