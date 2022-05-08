@@ -159,7 +159,7 @@ highlight mathkeywordqqq ctermfg=cyan guifg=#00ffff
 set foldminlines=0
 
 
-set foldtext=MyFoldText()
+
 function MyFoldText()
   let nl = v:foldend - v:foldstart + 1
   let nucolwidth = &fdc + &number*&numberwidth
