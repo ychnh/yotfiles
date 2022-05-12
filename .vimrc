@@ -174,3 +174,4 @@ function MyFoldText()
 endfunction
 set foldtext=MyFoldText()
 
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
