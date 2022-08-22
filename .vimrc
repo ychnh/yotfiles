@@ -126,6 +126,7 @@ nnoremap <buffer> <F8> :exec '!python' shellescape(@%, 1)<cr>
 nnoremap <c-s> :w<cr>
 nnoremap <F11> :edit<Space>
 nnoremap <F9> :bd<cr>
+nnoremap > @q
 
 nnoremap <F1> :call latex#Ltx()<cr>
 " notebook compile hotkey
