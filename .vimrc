@@ -176,3 +176,5 @@ endfunction
 set foldtext=MyFoldText()
 
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
+set breakindentopt=shift:2
