@@ -8,8 +8,11 @@ cd yotfiles
 
 # Future
 * install vimplug
-* install flux
 * sudo apt-get install python3-neovim
+* sudo apt-get install python3-pip
+* pip3 install jedi
+* install flux
+
 * run scripts on startup
 
 ```
