@@ -12,12 +12,12 @@ cd yotfiles
 * sudo apt-get install python3-pip
 * pip3 install jedi
 * install flux
-
 * run scripts on startup
 
 ```
 scripts
 xrandr --output HDMI-1-0 --auto --same-as eDP --mode 2560x1440
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Super_L'
 ./xflux -z 90011 -k 2000
 ```
 
