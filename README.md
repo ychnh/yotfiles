@@ -14,6 +14,8 @@ cd yotfiles
 * install flux
 * run scripts on startup
 
+* dwm https://dwm.suckless.org/customisation/windows_key/
+
 ```
 scripts
 xrandr --output HDMI-1-0 --auto --same-as eDP --mode 2560x1440
