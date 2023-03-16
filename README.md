@@ -15,6 +15,7 @@ cd yotfiles
 * run scripts on startup
 
 * dwm https://dwm.suckless.org/customisation/windows_key/
+* dwm https://dwm.suckless.org/patches/warp/
 
 ```
 scripts just add in for now # .xinputrc
