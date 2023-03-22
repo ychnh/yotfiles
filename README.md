@@ -33,7 +33,7 @@ sleep 0.5
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Super_L
 #while true; do xsetroot -name "$(date +"%m.%d. (%a) %I:%M")"; sleep 2; done &
 BAT="$(acpi | awk '{print $4}' | tr -d '%,')%"
-DATE="$(date +'%m.%d. (%a) %I:%M')"
+DATE="$(date +'%m.%d. (%a) %H:%M')"
 DWMSTATUS = "${BAT} ${DATE}"
 while true; do xsetroot -name "$DWMSTATUS"; sleep 2; done &
 ```
