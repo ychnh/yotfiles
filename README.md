@@ -33,7 +33,7 @@ xmodmap -e 'clear Lock' -e 'keycode 0x42 = Super_L
 xrandr --output $HDMI --auto --same-as $eDP --mode 1680x1050
 redshift -O 3400
 
-#BAT="$(acpi | awk '{print $4}' | tr -d '%,')%"
+#BAT="$(acpi | grep -o '.\{3\}%' | tr -d '%,')%"
 #DATE="$(date +'%m.%d. (%a) %H:%M')"
 #DWMSTATUS = "${BAT} ${DATE}"
 #while true; do xsetroot -name "$DWMSTATUS"; sleep 2; done &
