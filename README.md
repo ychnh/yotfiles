@@ -50,6 +50,7 @@ while true; do BAT="$(acpi | awk '{print $4}' | tr -d '%,')%"; DATE="$(date +'%m
 ```
 
 # TODO
+ADD power management tools
 Add markdown.vim and push to plugged/vim-markdown/syntax in push.sh
 hmm seems to have some bug with overlapping wiht other syntax, investigate later
 ```
