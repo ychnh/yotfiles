@@ -1,19 +1,19 @@
 # Usage
 Clone this directory in home directory and call ./push.sh
----
+```
 git clone url
 cd yotfiles
 ./push.sh
----
+```
 
 # Orgmode stuff
----
+```
 #+BEGIN_COMMENT -*- mode: org -*-
 #+END_COMMENT
 #+STARTUP: showall
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles.css" />
 #+OPTIONS: html-postamble:nil
----
+```
 
 # Future
 * install vimplug
