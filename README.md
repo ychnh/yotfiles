@@ -6,6 +6,15 @@ cd yotfiles
 ./push.sh
 ---
 
+# Orgmode stuff
+---
+#+BEGIN_COMMENT -*- mode: org -*-
+#+END_COMMENT
+#+STARTUP: showall
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles.css" />
+#+OPTIONS: html-postamble:nil
+---
+
 # Future
 * install vimplug
 * sudo apt-get install python3-neovim
