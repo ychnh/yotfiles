@@ -6,6 +6,9 @@ sudo tar xvzf dwm-6.2.tar.gz
 chown -R `id -u`:`id -g` dwm-6.2
 cd dwm-6.2
 
+sudo apt-get install libxinerama-dev
+sudo apt-get install libxft-dev
+
 sudo make clean install
 
 sudo apt-get install dwm
