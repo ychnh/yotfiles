@@ -6,7 +6,7 @@
 
 ;; =========
 (setq org-format-latex-options
-      '(:foreground "white" :background "#2e2e2e" :scale 1.5 :html-foreground "navy" :html-background "lemonchiffon"))
+      '(:foreground "white" :background "#2e2e2e" :scale 1.2 :html-foreground "navy" :html-background "lemonchiffon"))
 (global-linum-mode t)
 ;;(setq org-adapt-indentation nil)
 ;;(setq org-indent-mode -1)
