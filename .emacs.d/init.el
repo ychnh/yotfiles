@@ -40,4 +40,14 @@
 
 (global-set-key (kbd "C-l") 'org-latex-preview)
 (global-set-key (kbd "C-s") 'save-buffer)
-(global-set-key (kbd "C-l C-a") 'org-latex-preview-all-sections)
+;;(global-set-key (kbd "C-l C-a") 'org-latex-preview-all-sections)
+;;(setq org-superstar-headline-bullets-list '("#"))
+(setq org-superstar-prettify-item-bullets nil)
+(setq org-indent-mode nil)
+
+;; Not sure what these do but they don't seem to work well
+;;(setq org-adapt-indentation nil)
+
+
+
+
