@@ -48,7 +48,8 @@
 
 ;; Not sure what these do but they don't seem to work well
 ;;(setq org-adapt-indentation nil)
-(setq-default dotspacemacs-show-trailing-whitespace nil) 
+(setq-default dotspacemacs-show-trailing-whitespace nil)
+(setq org-ellipsis " ++")
 
 
 
