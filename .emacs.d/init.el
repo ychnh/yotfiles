@@ -1,3 +1,4 @@
+;; USEFUL COMMAND C-h v describe variable
 
 (defun my-custom-function ()
   "My custom function that prints a message."
