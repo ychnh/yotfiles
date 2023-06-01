@@ -41,7 +41,7 @@
 
 (global-set-key (kbd "C-l") 'org-latex-preview)
 (global-set-key (kbd "C-s") 'save-buffer)
-;;(global-set-key (kbd "C-l C-a") 'org-latex-preview-all-sections)
+(global-set-key (kbd "C-k") 'org-latex-preview-all-sections)
 ;;(setq org-superstar-headline-bullets-list '("#"))
 (setq org-superstar-prettify-item-bullets nil)
 (setq org-indent-mode nil)
@@ -50,6 +50,22 @@
 ;;(setq org-adapt-indentation nil)
 (setq-default dotspacemacs-show-trailing-whitespace nil)
 (setq org-ellipsis " ++")
+(setq org-M-RET-may-split-line nil)
 
+(defun my-indent-settings()
+  (interactive)
+  (setq indent-line-function 'indent-relative))
+(add-hook 'org-mode-hook 'my-indent-settings)
+(setq indent-line-function 'indent-relative)
+
+(defun my-indent-and-newline ()
+  "Insert a newline and indent using `indent-relative'."
+  (interactive)
+  (newline)
+  (indent-relative))
+
+(eval-after-load 'evil
+  '(progn
+     (define-key evil-insert-state-map (kbd "RET") 'my-indent-and-newline)))
 
 
