@@ -150,14 +150,15 @@
   "Insert a newline and indent using `indent-relative'."
   (interactive)
   (newline)
-  (indent-relative))
+  (indent-relative-maybe))
 
 (eval-after-load 'evil
   '(progn
      (define-key evil-insert-state-map (kbd "RET") 'my-indent-and-newline)))
 
+(setq org-display-outline-path nil)
 ;(enable-theme 'grayscale-theme)
-
+; =====================================================
 
 (defun my-custom-function ()
   "My custom function that prints a message."
