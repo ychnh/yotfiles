@@ -15,3 +15,5 @@ sudo apt-get install dwm
 sudo cp /usr/share/xsessions/dwm.desktop{,.bak}
 sudo apt-get purge dwm
 sudo mv /usr/share/xsessions/dwm.desktop{.bak,}
+
+sudo apt install acpi
