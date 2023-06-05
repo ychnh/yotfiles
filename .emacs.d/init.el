@@ -253,7 +253,7 @@
   "Save buffers and quit Emacs."
   (interactive)
   (save-some-buffers t)
-  (evil-exit)
+  (evil-quit)
   (kill-emacs))
 
 (evil-define-key 'normal global-map (kbd "C-q") 'save-and-quit-emacs)
