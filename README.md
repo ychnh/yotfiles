@@ -27,20 +27,19 @@ cd yotfiles
 * dwm https://dwm.suckless.org/patches/warp/
 
 ```
-scripts just add in for now # .xinputrc
+#scripts just add in for now # .xinputrc
 # im-config(8) generated on Wed, 15 Mar 2023 16:26:05 +0900
-run_im fcitx
+#run_im fcitx
 # im-config signature: a7673d91aeb6a4da7061b047288d2e59  -
 #
-eDP="$(xrandr | awk '/ connected/ && !/ disconnected/ {print $1}' |  sed -n '1p')"
-HDMI="$(xrandr | awk '/ connected/ && !/ disconnected/ {print $1}' |  sed -n '2p')"
-xrandr --output $eDP --mode 1680x1050 --set 'scaling mode' Full
+#eDP="$(xrandr | awk '/ connected/ && !/ disconnected/ {print $1}' |  sed -n '1p')"
+#HDMI="$(xrandr | awk '/ connected/ && !/ disconnected/ {print $1}' |  sed -n '2p')"
+#xrandr --output $eDP --mode 1680x1050 --set 'scaling mode' Full
 
-#./xflux -z 90011 -k 2500
 sleep 0.5
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Super_L
-xrandr --output $HDMI --auto --same-as $eDP --mode 1680x1050
-redshift -O 3400
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Alt_L'
+#xrandr --output $HDMI --auto --same-as $eDP --mode 1680x1050
+#redshift -O 3400
 
 #BAT="$(acpi | grep -o '.\{3\}%' | tr -d '%,')%"
 #DATE="$(date +'%m.%d. (%a) %H:%M')"
