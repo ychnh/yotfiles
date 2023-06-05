@@ -1,3 +1,6 @@
 alias vi="/usr/bin/nvim"
 #disable ctrl+s suspend
 stty -ixon
+
+
+alias em='emacs'
