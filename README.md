@@ -39,7 +39,8 @@ cd yotfiles
 sleep 0.5
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Alt_L'
 #xrandr --output $HDMI --auto --same-as $eDP --mode 1680x1050
-#redshift -O 3400
+xsetroot -solid '#2e3440'redshift -O 3400
+
 
 #BAT="$(acpi | grep -o '.\{3\}%' | tr -d '%,')%"
 #DATE="$(date +'%m.%d. (%a) %H:%M')"
