@@ -248,4 +248,13 @@
 
 (global-set-key (kbd "C-q") 'save-and-quit-emacs)
 
+;;=======
+(defun save-and-quit-emacs ()
+  "Save buffers and quit Emacs."
+  (interactive)
+  (save-some-buffers t)
+  (evil-exit)
+  (kill-emacs))
+
+(evil-define-key 'normal global-map (kbd "C-q") 'save-and-quit-emacs)
 
