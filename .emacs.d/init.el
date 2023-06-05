@@ -237,4 +237,15 @@
   (message "saving orgfold")
 )
 
+;;===============
 (global-set-key (kbd "C-s") 'my-save-and-savefold)
+
+(defun save-and-quit-emacs ()
+  "Save buffers and quit Emacs."
+  (interactive)
+  (save-some-buffers t)
+  (kill-emacs))
+
+(global-set-key (kbd "C-q") 'save-and-quit-emacs)
+
+
