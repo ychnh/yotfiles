@@ -84,7 +84,7 @@
 
 ;; =========
 (setq org-format-latex-options
-      '(:foreground "white" :background "#2e2e2e" :scale 1.5 :html-foreground "navy" :html-background "lemonchiffon"))
+      '(:foreground "white" :background "#2e2e2e" :scale .75 :html-foreground "navy" :html-background "lemonchiffon"))
 (global-linum-mode t)
 
 
@@ -247,4 +247,6 @@
   (kill-emacs))
 
 (global-set-key (kbd "C-q") 'save-and-quit-emacs)
+
+(global-visual-line-mode 1)
 
