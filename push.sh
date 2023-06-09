@@ -10,4 +10,8 @@ mkdir ~/.vim/syntax
 cp markdown.vim ~/.vim/syntax
 mkdir ~/.emacs.d
 cp .emacs.d/init.el ~/.emacs.d/init.el
+
+mkdir .termux
+cp termux.properties ~/.termux/termux.properties
+
 pip3 install pynvim
