@@ -84,7 +84,7 @@
 
 ;; =========
 (setq org-format-latex-options
-      '(:foreground "white" :background "#2e2e2e" :scale .75 :html-foreground "navy" :html-background "lemonchiffon"))
+      '(:foreground "white" :background "#2e2e2e" :scale 0.85 :html-foreground "navy" :html-background "lemonchiffon"))
 (global-linum-mode t)
 
 
@@ -167,7 +167,7 @@
 
 (defun orgfold-get-fold-info-file-name ()
   (interactive)
-  (concat (buffer-file-name) ".fold"))
+  (concat (file-name-directory buffer-file-name) "." (file-name-nondirectory buffer-file-name) ".fold"))
 
 (defun orgfold-save ()
   (interactive)
@@ -247,6 +247,3 @@
   (kill-emacs))
 
 (global-set-key (kbd "C-q") 'save-and-quit-emacs)
-
-(global-visual-line-mode 1)
-
