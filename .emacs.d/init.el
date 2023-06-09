@@ -247,3 +247,4 @@
   (kill-emacs))
 
 (global-set-key (kbd "C-q") 'save-and-quit-emacs)
+(global-visual-line-mode 1)
