@@ -35,18 +35,19 @@ cd yotfiles
 #eDP="$(xrandr | awk '/ connected/ && !/ disconnected/ {print $1}' |  sed -n '1p')"
 #HDMI="$(xrandr | awk '/ connected/ && !/ disconnected/ {print $1}' |  sed -n '2p')"
 #xrandr --output $eDP --mode 1680x1050 --set 'scaling mode' Full
+#xrandr --output DP-2 --brightness 1.5
 
 sleep 0.5
-xmodmap -e 'clear Lock' -e 'keycode 0x42 = Alt_L'
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Super_L'
 #xrandr --output $HDMI --auto --same-as $eDP --mode 1680x1050
-xsetroot -solid '#2e3440'redshift -O 3400
-
+redshift -O 4000
+xsetroot -solid '#2e3440'
 
 #BAT="$(acpi | grep -o '.\{3\}%' | tr -d '%,')%"
 #DATE="$(date +'%m.%d. (%a) %H:%M')"
 #DWMSTATUS = "${BAT} ${DATE}"
 #while true; do xsetroot -name "$DWMSTATUS"; sleep 2; done &
-while true; do BAT="$(acpi | awk '{print $4}' | tr -d '%,')%"; DATE="$(date +'%m.%d. (%a) %H:%M')"; DWMSTATUS="${BAT} ${DATE}"; xsetroot -name "$DWMSTATUS"; sleep 2; done &
+while true; do BAT="$(acpi | awk '{print $4}' | tr -d '%,')%"; WIFI="$(iwgetid -r)"; DATE="$(date +'%m.%d. (%a) %H:%M')"; DWMSTATUS="[${WIFI}] ${BAT} ${DATE}"; xsetroot -name "$DWMSTATUS"; sleep 2; done &
 ```
 
 # TODO
